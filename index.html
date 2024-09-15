@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap">
+        <!-- Linking a font from google fonts. -->
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBlog</title>
+</head>
+<body> 
+    <!-- Creating a grid. Parent needs to be within div tag. Give each div an ID, as there will be multiple. -->
+    <div id="grid_container">
+        <header id="main_header">
+            <h1>PacaBlog<br>
+                <img src="paca.jpg" alt="Paca the alpaca plushie." id="main_img"></h1>
+        </header>
+        <div id="menu">
+            <nav>
+                <a href="" class="navbutton">Home</a>
+                <a href="" class="navbutton">Bio</a>
+                <a href="" class="navbutton">Contact</a>
+            </nav>
+        </div>
+        <div>
+            <img id="daily_img" alt="Daily alpaca image chosen randomly.">
+        </div>
+        <div id="form">
+            <h2>Alpaca Committee Sign-Up</h2>
+            <form action="" method="">
+                <!-- Creating a radio (option select) button. -->
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+                <!-- Label means that even if you click on the label instead of the box, it will click on the box. Useful when box v small. -->
+                <br>
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+                <br><br><label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" required>
+                <!-- Type is set as email rather than text, so it will check if this is in an email format. -->
+            <br><br> <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <!-- Using password as input type means that, when you type the password, it will appear as bullet points rather than as text. Protects from shouldering. -->
+                <br><br><label for="favourite_animal">What is the best animal in the world?</label>
+                    <!-- This label is for entire radio. -->
+                <input type="radio" name="favourite_animal" id="humans" value="humans">
+                <label for="humans">Humans</label>
+                <!-- This is for the specific 'alpaca' value. -->
+
+                <input type="radio" name="favourite_animal" id="alpaca" value="alpaca">
+                <label for="alpaca">Alpacas</label>
+
+                <input type="radio" name="favourite_animal" id="dogs" value="dogs">
+                <label for="dogs">Dogs</label>
+
+                <input type="radio" name="favourite_animal" id="cats" value="cats">
+                <label for="cats">Cats</label>
+                <br>
+
+                <!-- Now creating a drop-down: -->
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="england">England</option>
+                    <option value="scotland">Scotland</option>
+                    <option value="wales">Wales</option>
+                    <option value="northern_ireland">Northern Ireland</option>
+                    <option value="australia">Australia</option>
+                </select>
+
+                <br><br><label for="bio">Why do you want to sign-up for our committee? Summarise in at least 100 words.</label><br>
+                <textarea name="bio" id="bio" cols="50" rows="10" required></textarea>
+                <!-- To make a minimum word count, I would need JavaScript. -->
+
+                <!-- Creating a checkbox. If you want multiple checkboxes here, keep the name the same. -->
+                <br><br><input type="checkbox" name="signup" id="signup">
+                <label for="signup">Sign-up for our free newsletter!</label>
+
+                <!-- Creating submit input. This allows form to submit. Value refers to what button will say.-->
+                <br><br><input type="submit" value="Send form">
+            </form>
+        </div>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>We have created this website in honour of Paca the alpaca plushie. We post about alpaca facts, Paca's memories and alpaca events!</p>
+            <p>Paca was born two years ago and made her appearance in Card Factory. Since then, she's been on many adventures around the globe, from Morocco to Poland. Her favourite subject is Biology, and she loves sleeping, playing and learning about the world.</p>
+        </section>
+        <section id="main_content">
+            <article>
+                <!-- Heading, main and footer for this. -->
+                <header>
+                    <!-- Header of article goes here. -->
+                    <h2>Paca meets Antigen-Antibody complex.</h2>
+                    <img src="Paca_Ag_Ab.jpg" alt="Paca meeting an antigen-antibody complex plushie." id="article_img">
+                    <h3>By Sadia Amin</h3>
+                </header>
+                <main>
+                    <p>
+                        On Friday 30th August, Lord Paca met Antigen-Antibody complex for the first time.
+                    </p>
+                    <p>
+                        Antigen-Antibody complex was given as a gift to the Paca family. Paca was excited to meet her new sibling for the first time. Upon their meeting, Paca was amazed by the flexibility of the Fab arms. Needless to say, she was impressed by the design. Paca is a scientist after all!
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor sapiente quod natus dolore vitae hic laudantium, architecto corrupti impedit beatae, sit omnis voluptates porro optio recusandae ducimus commodi esse!
+                    </p>
+                    <blockquote>
+                        "Paca's scientist self was pleased." - <cite>Sadia Amin, 2024</cite>
+                    </blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis quidem sit voluptas inventore excepturi earum voluptatum veniam, numquam minima.
+                    </p>
+                </main>
+                <footer>
+                    <h2>Bibliography</h2>
+                    <h3>Davies, D.R., Sheriff, S. and Padlan, E.A., 1988. Antibody-antigen complexes. Journal of Biological Chemistry, 263(22), pp.10541-10544.</h3>
+                    <!-- <a href="https://www.linkedin.com/in/sadia-amin-b091aa217/">Author Linkedin Profile</a> -->
+                        <!-- Opening this link takes you away from your webpage, instead of opening in a new tab. -->
+                    <a href="https://www.linkedin.com/in/sadia-amin-b091aa217/" target="_blank">Author Linkedin Profile</a>
+                        <!-- Opening this link takes you to a new tab, as there is the word "target". Target key word has different meanings. -->
+                        <!-- _self: Load URL into same browsing context, i.e. same tab. -->
+                        <!-- _blank: Load URL into new browsing context, i.e. new tab. Can make this new window if you like. -->
+                    <img src="https://cottoncreekfarms.com/wp-content/uploads/2019/11/Young-Teddy-as-a-Cria-1225x800.jpg" alt="Alpaca smiling." id="footer_img">
+                    <!-- src is image you display. Can be:
+                    - URL of image. (But this image may not always live online ._.)
+                    - Photo from your files. Need to be put copy of this with your index.html file. -->
+                        <!-- Check how to change size. -->
+                    <!-- alt is broken icon for when image doesn't load. e.g. Image description. -->
+                </footer>
+            </article>
+            <article>
+                <!-- Heading, main and footer for this. -->
+                <header>
+                    <!-- Header of article goes here. -->
+                    <h2>Paca meets Antigen-Antibody complex.</h2>
+                    <img src="Paca_Ag_Ab.jpg" alt="Paca meeting an antigen-antibody complex plushie." id="article_img">
+                    <h3>By Sadia Amin</h3>
+                </header>
+                <main>
+                    <p>
+                        On Friday 30th August, Lord Paca met Antigen-Antibody complex for the first time.
+                    </p>
+                    <p>
+                        Antigen-Antibody complex was given as a gift to the Paca family. Paca was excited to meet her new sibling for the first time. Upon their meeting, Paca was amazed by the flexibility of the Fab arms. Needless to say, she was impressed by the design. Paca is a scientist after all!
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor sapiente quod natus dolore vitae hic laudantium, architecto corrupti impedit beatae, sit omnis voluptates porro optio recusandae ducimus commodi esse!
+                    </p>
+                    <blockquote>
+                        "Paca's scientist self was pleased." - <cite>Sadia Amin, 2024</cite>
+                    </blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis quidem sit voluptas inventore excepturi earum voluptatum veniam, numquam minima.
+                    </p>
+                </main>
+                <footer>
+                    <h2>Bibliography</h2>
+                    <h3>Davies, D.R., Sheriff, S. and Padlan, E.A., 1988. Antibody-antigen complexes. Journal of Biological Chemistry, 263(22), pp.10541-10544.</h3>
+                    <!-- <a href="https://www.linkedin.com/in/sadia-amin-b091aa217/">Author Linkedin Profile</a> -->
+                        <!-- Opening this link takes you away from your webpage, instead of opening in a new tab. -->
+                    <a href="https://www.linkedin.com/in/sadia-amin-b091aa217/" target="_blank">Author Linkedin Profile</a>
+                        <!-- Opening this link takes you to a new tab, as there is the word "target". Target key word has different meanings. -->
+                        <!-- _self: Load URL into same browsing context, i.e. same tab. -->
+                        <!-- _blank: Load URL into new browsing context, i.e. new tab. Can make this new window if you like. -->
+                    <img src="https://cottoncreekfarms.com/wp-content/uploads/2019/11/Young-Teddy-as-a-Cria-1225x800.jpg" alt="Alpaca smiling." id="footer_img">
+                    <!-- src is image you display. Can be:
+                    - URL of image. (But this image may not always live online ._.)
+                    - Photo from your files. Need to be put copy of this with your index.html file. -->
+                        <!-- Check how to change size. -->
+                    <!-- alt is broken icon for when image doesn't load. e.g. Image description. -->
+                </footer>
+            </article>
+            <article>
+                <!-- Heading, main and footer for this. -->
+                <header>
+                    <!-- Header of article goes here. -->
+                    <h2>Paca meets Antigen-Antibody complex.</h2>
+                    <img src="Paca_Ag_Ab.jpg" alt="Paca meeting an antigen-antibody complex plushie." id="article_img">
+                    <h3>By Sadia Amin</h3>
+                </header>
+                <main>
+                    <p>
+                        On Friday 30th August, Lord Paca met Antigen-Antibody complex for the first time.
+                    </p>
+                    <p>
+                        Antigen-Antibody complex was given as a gift to the Paca family. Paca was excited to meet her new sibling for the first time. Upon their meeting, Paca was amazed by the flexibility of the Fab arms. Needless to say, she was impressed by the design. Paca is a scientist after all!
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor sapiente quod natus dolore vitae hic laudantium, architecto corrupti impedit beatae, sit omnis voluptates porro optio recusandae ducimus commodi esse!
+                    </p>
+                    <blockquote>
+                        "Paca's scientist self was pleased." - <cite>Sadia Amin, 2024</cite>
+                    </blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis quidem sit voluptas inventore excepturi earum voluptatum veniam, numquam minima.
+                    </p>
+                </main>
+                <footer>
+                    <h2>Bibliography</h2>
+                    <h3>Davies, D.R., Sheriff, S. and Padlan, E.A., 1988. Antibody-antigen complexes. Journal of Biological Chemistry, 263(22), pp.10541-10544.</h3>
+                    <!-- <a href="https://www.linkedin.com/in/sadia-amin-b091aa217/">Author Linkedin Profile</a> -->
+                        <!-- Opening this link takes you away from your webpage, instead of opening in a new tab. -->
+                    <a href="https://www.linkedin.com/in/sadia-amin-b091aa217/" target="_blank">Author Linkedin Profile</a>
+                        <!-- Opening this link takes you to a new tab, as there is the word "target". Target key word has different meanings. -->
+                        <!-- _self: Load URL into same browsing context, i.e. same tab. -->
+                        <!-- _blank: Load URL into new browsing context, i.e. new tab. Can make this new window if you like. -->
+                    <img src="https://cottoncreekfarms.com/wp-content/uploads/2019/11/Young-Teddy-as-a-Cria-1225x800.jpg" alt="Alpaca smiling." id="footer_img">
+                    <!-- src is image you display. Can be:
+                    - URL of image. (But this image may not always live online ._.)
+                    - Photo from your files. Need to be put copy of this with your index.html file. -->
+                        <!-- Check how to change size. -->
+                    <!-- alt is broken icon for when image doesn't load. e.g. Image description. -->
+                </footer>
+            </article>
+        </section>
+        <footer id="main_footer">
+            <h2>We love alpacas!</h2>
+            <section>
+                <!-- This section will be site map. -->
+                <nav> <ul id="footer_ul">
+                    <div>
+                        <li><a href="" class="navbutton">Home</a></li>
+                        <li><a href="" class="navbutton">Contact</a></li>
+                        <li><a href="" class="navbutton">Volunteering</a></li>
+                    </div>
+                    <div>
+                        <li><a href="" class="navbutton">Privacy Policy</a></li>
+                        <li><a href="" class="navbutton">Terms & Conditions</a></li>
+                        <li><a href="" class="navbutton">Cookie Policy</a></li>
+                    </ul></div>
+                </nav>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

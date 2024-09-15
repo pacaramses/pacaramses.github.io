@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+}
+#main_header{
+    color:  azure;
+    width: 100vw;
+    grid-area: header;
+    position: center;
+    background-image: url('https://i.natgeofe.com/n/2a58b782-8872-44e6-96da-81a48dee635a/GettyImages-180723850_16x9.jpg');
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5% 0%;
+    margin: 0px;
+}
+#main_header>h1{
+    font-family: 'Sevillana', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+    background-color: pink;
+    margin: 0%;
+    padding: 0%;
+}
+#menu{
+    padding:32px 0px;
+    background-color: rgb(177, 133, 208);
+    grid-area: menu;
+    font-size: large;
+}
+nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+nav>a{
+    margin-bottom: 5%;
+}
+#about{
+    padding: 32px 0px;
+    grid-area: about;
+    text-align: center;
+    background-color: palevioletred;
+    width: 70vw
+}
+#main_content{
+    padding: 32px 0px;
+    margin-right: 0px;
+    grid-area: main;
+    text-align: center;
+    background-color: pink;
+}
+article{
+    margin:auto;
+    border-bottom: 5px solid palevioletred;
+    padding: 5%;
+}
+#main_footer{
+    padding: 16px;
+    background-color: rgb(177, 133, 208);
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+}
+#form{
+    padding: 16px 0px;
+    background-color: rgb(245, 133, 152);
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    grid-area: form;
+}
+#grid_container{
+    display: grid;
+    /* Make header, menu, main and footer their own grid areas. */
+    grid-template-areas: 
+    /* Here, write your drawing of outline as text. */
+    "header header"
+    "menu about"
+    "daily main"
+    "form main"
+    "footer footer"
+    ;
+    grid-template-columns: 3fr 7fr;
+    /* fr stands for fraction. 3fr is 30%. */
+    width: 100vw;
+}
+
+
+#main_img{
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+}
+#article_img{
+    width:30vw;
+    height:55vh;
+}
+#footer_img{
+    border-radius: 50%;
+    width: 100px;
+    height: 80px;
+}
+#daily_img{
+    width: 30vw;
+    height: 30vh;
+    grid-area: daily;
+    background-color: azure;
+}
+#main_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#main_footer>h2{
+    margin-right: 0%;
+    font-family: 'Sevillana', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    font-size: xx-large;
+}
+#footer_ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+#footer_ul>div>li{
+    margin-left: 20%;
+}
+.navbutton{
+    text-decoration: none;
+    color: azure
+}
